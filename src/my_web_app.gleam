@@ -13,6 +13,9 @@ pub fn main() {
 }
 
 fn web_service(_request) {
-  let body = bytes_builder.from_string("Hello! This is a web app built with Gleam and deployed on Zeabur!")
+  let body =
+    bytes_builder.from_string(
+      "Hello! This is a web app built with Gleam and deployed on Zeabur!",
+    )
   Response(200, [], mist.Bytes(body))
 }
