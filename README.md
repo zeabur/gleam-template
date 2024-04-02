@@ -1,20 +1,6 @@
-# my_web_app
+# gleam-template
 
-[![Package Version](https://img.shields.io/hexpm/v/my_web_app)](https://hex.pm/packages/my_web_app)
-[![Hex Docs](https://img.shields.io/badge/hex-docs-ffaff3)](https://hexdocs.pm/my_web_app/)
-
-```sh
-gleam add my_web_app
-```
-```gleam
-import my_web_app
-
-pub fn main() {
-  // TODO: An example of the project in use
-}
-```
-
-Further documentation can be found at <https://hexdocs.pm/my_web_app>.
+[![Deploy with Zeabur](https://zeabur.com/button.svg)](https://zeabur.com/)
 
 ## Development
 
