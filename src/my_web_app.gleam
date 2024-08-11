@@ -1,17 +1,18 @@
-import mist
-import gleam/erlang/process
 import gleam/bytes_builder
-import gleam/http/response.{Response}
 import gleam/erlang/os
+import gleam/erlang/process
+import gleam/http/response.{Response}
 import gleam/int
+import mist
 
 pub fn get_port() -> Int {
   case os.get_env("PORT") {
-    Ok(value) -> case int.parse(value) {
-      Error(e) -> 8080
-      Ok(i) -> i
-    }
-    Error(_) -> 8080  // If the environment variable is not set, fallback to 8080
+    Ok(value) ->
+      case int.parse(value) {
+        Error(e) -> 8080
+        Ok(i) -> i
+      }
+    Error(_) -> 8080
   }
 }
 
